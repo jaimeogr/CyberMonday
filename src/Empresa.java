@@ -39,4 +39,6 @@ public class Empresa  { //TODO: que funcion tiene el "<K, V>" en esta linea? yo 
     public boolean lugarTieneSoloVentasConDescuentos (String lugar){
         return establecimientos.stream().filter(e -> e.getLugar().equals(lugar)).allMatch(e -> e.todasSusVentasFueronConDescuento());
     }
+
+    //TODO: si quisiera hacer el ultimo punto, que cambia el diseño, como impleentaria el DC para las promociones?
 }
